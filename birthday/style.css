@@ -1,0 +1,97 @@
+* {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  body {
+    background: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .card {
+    border-radius: 20px;
+    height: 55vh;
+    width: 50vw;
+    box-shadow: 0 3px 6px rgba(255, 253, 253, 0.16), 0 3px 6px rgba(255, 253, 253, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: example;
+    animation-duration: 10s;
+    animation-direction: reverse;
+    position: relative;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+ animation-fill-mode: backwards;
+  }
+  
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      max-width: 50vw;
+      
+    }
+  
+  
+  @media only screen and(max-height: 40px) {
+    .card {
+      flex-direction: row-reverse;
+    }
+    .card img.birthday {
+      width: 50%;
+      max-width: 20vw;
+     
+    }
+  }
+  
+  
+
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+
+}
+
+@keyframes ani {
+   0%{margin-right: 0px;}
+   100%{margin-right: 200px;} 
+}
+
+  img.birthday {
+    max-height: 50vh;
+    animation: ani;
+    animation-duration: 2s;
+    border-radius: 15px;
+    animation-fill-mode: forwards;
+  }
+  
+  .text {
+    padding: 5em;
+    color: rgb(168, 126, 126);
+  }
+  
+  .muted {
+    opacity: 1.8;
+  }
+  
+  .space {
+    height: 200px;
+  }
+  .birthday{
+    width: 321px;
+  background-color: rgb(253, 104, 104);
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-direction: reverse;  
+  }
+  .thi{
+    font-size: 50px;
+    box-sizing: border-box;
+    color: rgb(255, 2, 2);
+  }
